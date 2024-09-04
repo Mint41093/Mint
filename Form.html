@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/Form.css">
+    <script>
+        
+        function displayMe(text)
+        {
+            var namevalue = document.getElementById('name').value;
+
+            var ipigrade = document.getElementById('ipi').value;
+            var imigrade = document.getElementById('imi').value;
+            var oopgrade = document.getElementById('oop').value;
+            var edpgrade = document.getElementById('edp').value;
+            var hc2grade = document.getElementById('hc2').value;
+
+            var totalgrades = Number(ipigrade) + Number(imigrade) + Number(oopgrade) + Number(edpgrade) + Number(hc2grade);
+            var avg = totalgrades / 5;
+            alert("Name: " + namevalue + "\nIPI: " + ipigrade + "\nIMI: " + imigrade +"\nOOP: " + oopgrade + "\nEDP: " + edpgrade + "\nHC2: " + hc2grade + "\nAverage: " + avg);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="inputf">
+            <div id="Name">
+                <div class="sub1">
+                    <b>Name:</b> 
+                </div>
+                <div class="sub2">
+                    <input type="string" id="name">
+                </div>
+            </div>
+            <br> <br>
+            <b>GRADE</b> <br> <br>
+            <div id="grade">
+                <div class="gradesub">
+                    <div class="grade">
+                        <div class="sub1">
+                            <b>IPI:</b> 
+                        </div>
+                        <div class="sub2">
+                            <input type="string" id="ipi">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradesub">
+                    <div class="grade">
+                        <div class="sub1">
+                            <b>IMI:</b> 
+                        </div>
+                        <div class="sub2">
+                            <input type="string" id="imi">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradesub">
+                    <div class="grade">
+                        <div class="sub1">
+                            <b>OOP:</b> 
+                        </div>
+                        <div class="sub2">
+                            <input type="string" id="oop">
+                        </div>
+                    </div>   
+                </div>
+                <div class="gradesub">
+                    <div class="grade">
+                        <div class="sub1">
+                            <b>EDP:</b> 
+                        </div>
+                        <div class="sub2">
+                            <input type="string" id="edp">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradesub">
+                    <div class="grade">
+                        <div class="sub1">
+                            <b>HC2:</b> 
+                        </div>
+                        <div class="sub2">
+                            <input type="string" id="hc2">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            
+
+            <button onclick="displayMe()"><b>Compute</b></button>
+        </div>
+        <!-- <div class="calculator">
+            <div class="display">
+    
+            </div>
+            <div class="buttons">
+    
+            </div>
+             </div> -->
+    </div>
+
+</body>
+</html>

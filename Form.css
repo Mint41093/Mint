@@ -1,0 +1,67 @@
+body
+{
+    background-color: azure;
+    
+}
+.main
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* border: 1px double green; */
+    height: max-content;
+    width: 98%;
+    padding: 1%;
+}
+
+#Name
+{
+    margin-bottom: 2%;
+    display: flex;
+    gap: 10px;
+}
+
+#grade
+{
+    margin-bottom: 2%;
+}
+.grade
+{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.gradesub
+{
+    display: flex;
+}
+
+.sub1
+{
+    width: 60px;
+    margin-top: 1%;
+}
+.sub2
+{
+    margin-top: 1%;
+    max-width: max-content;
+}
+
+.inputf
+{
+    display: flexbox;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 500px;
+    width: 300px;
+    padding: 1%;
+}
+
+.calculator
+{
+    border: 1px solid blue;
+    border-radius: 3%;
+    height: 500px;
+    width: 300px;
+    
+}
